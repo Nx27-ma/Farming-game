@@ -9,8 +9,6 @@ public class camera : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
     void Update()
     {
         transform.position = new Vector3(followTransform.position.x, followTransform.position.y, -1f);
