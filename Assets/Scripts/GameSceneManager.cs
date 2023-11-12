@@ -6,7 +6,7 @@ public class GameSceneManager : MonoBehaviour
     //MainMenu
     public void MainMenuStart()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void MainMenuSettings()
@@ -16,7 +16,7 @@ public class GameSceneManager : MonoBehaviour
 
     public void MainMenuQuit()
     {
-        //Application.Quit();
+        Application.Quit();
         Debug.Log("Player Quit the game!");
     }
 
