@@ -44,19 +44,19 @@ public class InventoyManager : MonoBehaviour
     {
         switch (button.name)
         {
-            case "slot1":
+            case "Slot1":
                 selectedslot = 0;
                 SlotImg1.GetComponent<Image>().color = new Color32(255, 0, 0, 100);
                 SlotImg2.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
                 SlotImg3.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
                 break;
-            case "slot2":
+            case "Slot2":
                 selectedslot = 1;
                 SlotImg1.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
                 SlotImg2.GetComponent<Image>().color = new Color32(255, 0, 0, 100);
                 SlotImg3.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
                 break;
-            case "slot3":
+            case "Slot3":
                 selectedslot = 2;
                 SlotImg1.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
                 SlotImg2.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
