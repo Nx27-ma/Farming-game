@@ -3455,6 +3455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 675773146}
+  - component: {fileID: 675773147}
   m_Layer: 0
   m_Name: FarmingFields
   m_TagString: Untagged
@@ -3486,6 +3487,27 @@ Transform:
   - {fileID: 589631402}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &675773147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675773145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f539c663a69051845b973d122642f741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plot1: {fileID: 2067761770}
+  plot2: {fileID: 1351427242}
+  plot3: {fileID: 566020970}
+  plot4: {fileID: 631872025}
+  plot5: {fileID: 1664233357}
+  plot6: {fileID: 1751203183}
+  plot7: {fileID: 708166802}
+  plot8: {fileID: 754799638}
+  plot9: {fileID: 589631401}
 --- !u!1 &689114047
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,21 +15,7 @@ public class cropBehavior : MonoBehaviour
     static float timeToGrow = 30;
     private float totalTime() { return timeToGrow * growthSpeed; }
     private Renderer rd;
-    //texture calls
-    public Texture emptyPlot;
-    public Texture greenSomething1; public Texture greenSomething2; public Texture greenSomething3; public Texture greenSomething4;
-    public Texture grass1; public Texture grass2; public Texture grass3; public Texture grass4;
-    public Texture wheat1; public Texture wheat2; public Texture wheat3; public Texture wheat4;
-    public Texture carrot1; public Texture carrot2; public Texture carrot3; public Texture carrot4;
-    public Texture potato1; public Texture potato2; public Texture potato3; public Texture potato4;
-    public Texture tomato1; public Texture tomato2; public Texture tomato3; public Texture tomato4;
-    public Texture berries1; public Texture berries2; public Texture berries3; public Texture berries4;
-    public Texture melon1; public Texture melon2; public Texture melon3; public Texture melon4;
-    public Texture pumpkin1; public Texture pumpkin2; public Texture pumpkin3; public Texture pumpkin4;
-    public Texture beetroot1; public Texture beetroot2; public Texture beetroot3; public Texture beetroot4;
-    public Texture cabbage1; public Texture cabbage2; public Texture cabbage3; public Texture cabbage4;
-    public Texture spinach1; public Texture spinach2; public Texture spinach3; public Texture spinach4;
-
+                                                                                                                                                                                                                                                                                                                                                                    public Texture emptyPlot;    public Texture greenSomething1; public Texture greenSomething2; public Texture greenSomething3; public Texture greenSomething4;    public Texture grass1; public Texture grass2; public Texture grass3; public Texture grass4;    public Texture wheat1; public Texture wheat2; public Texture wheat3; public Texture wheat4;    public Texture carrot1; public Texture carrot2; public Texture carrot3; public Texture carrot4;    public Texture potato1; public Texture potato2; public Texture potato3; public Texture potato4;    public Texture tomato1; public Texture tomato2; public Texture tomato3; public Texture tomato4;    public Texture berries1; public Texture berries2; public Texture berries3; public Texture berries4;    public Texture melon1; public Texture melon2; public Texture melon3; public Texture melon4;    public Texture pumpkin1; public Texture pumpkin2; public Texture pumpkin3; public Texture pumpkin4;    public Texture beetroot1; public Texture beetroot2; public Texture beetroot3; public Texture beetroot4;    public Texture cabbage1; public Texture cabbage2; public Texture cabbage3; public Texture cabbage4;    public Texture spinach1; public Texture spinach2; public Texture spinach3; public Texture spinach4;
     void Start()
     {
         rd = GetComponent<Renderer>();

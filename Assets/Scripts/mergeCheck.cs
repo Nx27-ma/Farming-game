@@ -3,16 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class mergeCheck : MonoBehaviour
-{
-    public cropBehavior farmland1;
-    public cropBehavior farmland2;
-    public cropBehavior farmland3;
-    public cropBehavior farmland4;
-    void Start()
-    {
-        
-    }
-    // Update is called once per frame
+{                                                                                                                                                                                                                                                                                                                                                                                                           public cropBehavior farmland1;    public cropBehavior farmland2;    public cropBehavior farmland3;    public cropBehavior farmland4;
     void Update()
     {
         if (farmland1.WhatSeed == farmland2.WhatSeed && farmland1.ImgIndex == farmland2.ImgIndex)
@@ -67,7 +58,6 @@ public class mergeCheck : MonoBehaviour
                 //drop de crop farmland1 dropt
             }
             farmland4.WhatSeed = 0;
-
         }
     }
 }
