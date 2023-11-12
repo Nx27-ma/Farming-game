@@ -2,10 +2,15 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class cropBehavior : MonoBehaviour
 {
-    public int whatSeed { get; set; } //start bij 0 anders vermoord quinten me
+    //needed for script 
+    public int WhatSeed { get { return whatSeed; } set { whatSeed = value; } } //start bij 0 anders vermoord quinten me
+    private int whatSeed;
+    private int imgIndex = 1;       //start niet bij 0 want quinten gaat het nooit nodig hebben
+    public int ImgIndex { get { return imgIndex; } set { imgIndex = value; } }
     public float growthSpeed { get; set; } //int between 0 and 1
     static float timeToGrow = 30;
     private float totalTime() { return timeToGrow * growthSpeed; }
@@ -17,7 +22,7 @@ public class cropBehavior : MonoBehaviour
     public Texture wheat1; public Texture wheat2; public Texture wheat3; public Texture wheat4;
     public Texture carrot1; public Texture carrot2; public Texture carrot3; public Texture carrot4;
     public Texture potato1; public Texture potato2; public Texture potato3; public Texture potato4;
-    public Texture cane1; public Texture cane2; public Texture cane3; public Texture cane4;
+    public Texture tomato1; public Texture tomato2; public Texture tomato3; public Texture tomato4;
     public Texture berries1; public Texture berries2; public Texture berries3; public Texture berries4;
     public Texture melon1; public Texture melon2; public Texture melon3; public Texture melon4;
     public Texture pumpkin1; public Texture pumpkin2; public Texture pumpkin3; public Texture pumpkin4;
@@ -34,17 +39,23 @@ public class cropBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        float tickingtime = totalTime();
-        int imgIndex = 0;
-        while (tickingtime > 0)
+        if (whatSeed != 0)
         {
-            tickingtime = totalTime() - Time.deltaTime;
+            float tickingtime = totalTime();
+            while (tickingtime > 0 && imgIndex == 1 || imgIndex == 3)
+            {
+                tickingtime = totalTime() - Time.deltaTime;
+            }
+            if (tickingtime <= 0)
+            {
+                imgIndex++;
+                plantCheck(whatSeed, imgIndex);
+
+            }
         }
-        if (tickingtime <= 0)
+        else
         {
-            imgIndex++;
-            plantCheck(whatSeed, imgIndex);
+            plantCheck(0, imgIndex);
         }
     }
     
@@ -53,7 +64,7 @@ public class cropBehavior : MonoBehaviour
         switch (planted)
         {
             case 0:
-                //empty plot
+                rd.material.mainTexture = emptyPlot;
                 break;
             case 1:
                 cropGrowth(greenSomething1, greenSomething2, greenSomething3, greenSomething4, imgIndex);
@@ -71,7 +82,7 @@ public class cropBehavior : MonoBehaviour
                 cropGrowth(potato1, potato2, potato3, potato4, imgIndex);
                 break;
             case 6:
-                cropGrowth(cane1, cane2, cane3, cane4, imgIndex);
+                cropGrowth(tomato1, tomato2, tomato3, tomato4, imgIndex);
                 break;
             case 7:
                 cropGrowth(berries1, berries2, berries3, berries4, imgIndex);
@@ -120,7 +131,5 @@ public class cropBehavior : MonoBehaviour
 
 
     }
-
-
 
 }
