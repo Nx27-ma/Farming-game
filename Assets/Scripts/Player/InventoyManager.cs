@@ -1,16 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class InventoyManager : MonoBehaviour
 {
     public static InventoyManager instance;
     public List<Item> items = new List<Item>();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 public GameObject Green;public GameObject Grass;public GameObject Wheat;public GameObject Carrot;public GameObject Potato;public GameObject Tomato;public GameObject Berrie;public GameObject Melon;public GameObject Pumpkin;public GameObject Beetroot;public GameObject Cabbage;public GameObject Spinach;public GameObject Green_Seed;public GameObject Grass_Seed;public GameObject Wheat_Seed;public GameObject Carrot_Seed;public GameObject Potato_Seed;public GameObject Tomato_Seed;public GameObject Berrie_Seed;public GameObject Melon_Seed;public GameObject Pumpkin_Seed;public GameObject Beetroot_Seed;public GameObject Cabbage_Seed;public GameObject Spinach_Seed;public GameObject Gieter;public GameObject Onkruidverwijderaar;public int selectedslot;public GameObject SlotImg1;public GameObject SlotImg2;public GameObject SlotImg3;public Sprite EmptySlot;public Sprite StartItem; public Transform Player;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 public GameObject Green;public GameObject Grass;public GameObject Wheat;public GameObject Carrot;public GameObject Potato;public GameObject Tomato;public GameObject Berrie;public GameObject Melon;public GameObject Pumpkin;public GameObject Beetroot;public GameObject Cabbage;public GameObject Spinach;public GameObject Green_Seed;public GameObject Grass_Seed;public GameObject Wheat_Seed;public GameObject Carrot_Seed;public GameObject Potato_Seed;public GameObject Tomato_Seed;public GameObject Berrie_Seed;public GameObject Melon_Seed;public GameObject Pumpkin_Seed;public GameObject Beetroot_Seed;public GameObject Cabbage_Seed;public GameObject Spinach_Seed;public GameObject Gieter;public GameObject Onkruidverwijderaar;public int selectedslot;public GameObject SlotImg1;public GameObject SlotImg2;public GameObject SlotImg3; public GameObject SlotTxt1; public GameObject SlotTxt2; public GameObject SlotTxt3; public Sprite EmptySlot;public Sprite StartItem; public Transform Player;
     private void Awake()
     {
         instance = this;
@@ -20,8 +16,8 @@ public class InventoyManager : MonoBehaviour
     {
         GameObject WheatObj = Instantiate(Wheat);
         items.Add(CreateEmptyItem());
-        items.Add(CreateEmptyItem());
-        items.Add(CreateEmptyItem());
+        items.Add(CreateBeginItem());
+        items.Add(CreateBeginItem());
     }
 
     private Item CreateEmptyItem()
@@ -131,6 +127,9 @@ public class InventoyManager : MonoBehaviour
         SlotImg2.GetComponent<Image>().sprite = items[1].itemImage;
         SlotImg3.GetComponent<Image>().sprite = items[2].itemImage;
 
+        SlotTxt1.GetComponent<Text>().text = items[0].itemName.ToString();
+        SlotTxt2.GetComponent<Text>().text = items[1].itemName.ToString();
+        SlotTxt3.GetComponent<Text>().text = items[2].itemName.ToString();
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
