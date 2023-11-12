@@ -127,9 +127,9 @@ public class InventoyManager : MonoBehaviour
         SlotImg2.GetComponent<Image>().sprite = items[1].itemImage;
         SlotImg3.GetComponent<Image>().sprite = items[2].itemImage;
 
-        SlotTxt1.GetComponent<Text>().text = items[0].itemName.ToString();
-        SlotTxt2.GetComponent<Text>().text = items[1].itemName.ToString();
-        SlotTxt3.GetComponent<Text>().text = items[2].itemName.ToString();
+        //SlotTxt1.GetComponent<Text>().text = items[0].itemName.ToString();
+        //SlotTxt2.GetComponent<Text>().text = items[1].itemName.ToString();
+        //SlotTxt3.GetComponent<Text>().text = items[2].itemName.ToString();
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
