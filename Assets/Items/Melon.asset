@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fb5948cded4f64eb66b3450ee603e6, type: 3}
   m_Name: Melon
   m_EditorClassIdentifier: 
-  itemName: Melon
+  itemName: 15
   itemImage: {fileID: 21300000, guid: 390a9fa6964f5144a9f75d38421a93ff, type: 3}
   itemType: 1

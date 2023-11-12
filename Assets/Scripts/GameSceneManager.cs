@@ -16,7 +16,7 @@ public class GameSceneManager : MonoBehaviour
 
     public void MainMenuQuit()
     {
-        //Application.Quit();
+        Application.Quit();
         Debug.Log("Player Quit the game!");
     }
 

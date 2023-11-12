@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fb5948cded4f64eb66b3450ee603e6, type: 3}
   m_Name: Pumpkin
   m_EditorClassIdentifier: 
-  itemName: Pumpkin
+  itemName: 17
   itemImage: {fileID: 21300000, guid: 2988e3b028f57aa418c645f0929b31a3, type: 3}
   itemType: 1

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fb5948cded4f64eb66b3450ee603e6, type: 3}
   m_Name: Tomato_Seed
   m_EditorClassIdentifier: 
-  itemName: Tomato_Seed
+  itemName: 12
   itemImage: {fileID: 21300000, guid: fa61fb9d09e1ddd4099f0321c4b91ec1, type: 3}
   itemType: 1

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fb5948cded4f64eb66b3450ee603e6, type: 3}
   m_Name: Carrot_Seed
   m_EditorClassIdentifier: 
-  itemName: Carrot_Seed
+  itemName: 8
   itemImage: {fileID: 21300000, guid: 477d177d4a099724baa492489c44dad6, type: 3}
   itemType: 1

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fb5948cded4f64eb66b3450ee603e6, type: 3}
   m_Name: Gieter
   m_EditorClassIdentifier: 
-  itemName: Green_Seed
-  itemImage: {fileID: 21300000, guid: 2c99387d29109c441b196012a25d53ff, type: 3}
-  itemType: 1
+  itemName: 25
+  itemImage: {fileID: 21300000, guid: 692cfe917906b094ba65fe0f2de46475, type: 3}
+  itemType: 0

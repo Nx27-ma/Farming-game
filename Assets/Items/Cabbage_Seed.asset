@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fb5948cded4f64eb66b3450ee603e6, type: 3}
   m_Name: Cabbage_Seed
   m_EditorClassIdentifier: 
-  itemName: Cabbage_Seed
+  itemName: 22
   itemImage: {fileID: 21300000, guid: f1886d1a0067bd3469a418a2bb0512a0, type: 3}
   itemType: 1

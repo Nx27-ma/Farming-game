@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fb5948cded4f64eb66b3450ee603e6, type: 3}
   m_Name: Berrie
   m_EditorClassIdentifier: 
-  itemName: Barrie
+  itemName: 13
   itemImage: {fileID: 21300000, guid: df4d1d19c8ad5f14fb3e75d0327d5118, type: 3}
   itemType: 1
