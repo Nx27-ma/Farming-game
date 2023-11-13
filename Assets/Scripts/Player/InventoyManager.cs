@@ -6,7 +6,56 @@ public class InventoyManager : MonoBehaviour
 {
     public static InventoyManager instance;
     public List<Item> items = new List<Item>();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 public GameObject Green;public GameObject Grass;public GameObject Wheat;public GameObject Carrot;public GameObject Potato;public GameObject Tomato;public GameObject Berrie;public GameObject Melon;public GameObject Pumpkin;public GameObject Beetroot;public GameObject Cabbage;public GameObject Spinach;public GameObject Green_Seed;public GameObject Grass_Seed;public GameObject Wheat_Seed;public GameObject Carrot_Seed;public GameObject Potato_Seed;public GameObject Tomato_Seed;public GameObject Berrie_Seed;public GameObject Melon_Seed;public GameObject Pumpkin_Seed;public GameObject Beetroot_Seed;public GameObject Cabbage_Seed;public GameObject Spinach_Seed;public GameObject Gieter;public GameObject Onkruidverwijderaar;public int selectedslot;public GameObject SlotImg1;public GameObject SlotImg2;public GameObject SlotImg3; public GameObject SlotTxt1; public GameObject SlotTxt2; public GameObject SlotTxt3; public Sprite EmptySlot;public Sprite StartItem; public Transform Player;
+
+    public GameObject Green;
+    public GameObject Grass;
+    public GameObject Wheat;
+    public GameObject Carrot;
+    public GameObject Potato;
+    public GameObject Tomato;
+    public GameObject Berrie;
+    public GameObject Melon;
+    public GameObject Pumpkin;
+    public GameObject Beetroot;
+    public GameObject Cabbage;
+    public GameObject Spinach;
+    
+    public GameObject Green_Seed;
+    public GameObject Grass_Seed;
+    public GameObject Wheat_Seed;
+    public GameObject Carrot_Seed;
+    public GameObject Potato_Seed;
+    public GameObject Tomato_Seed;
+    public GameObject Berrie_Seed;
+    public GameObject Melon_Seed;
+    public GameObject Pumpkin_Seed;
+    public GameObject Beetroot_Seed;
+    public GameObject Cabbage_Seed;
+    public GameObject Spinach_Seed;
+    
+    public GameObject Gieter;
+    public GameObject Onkruidverwijderaar;
+    
+    public int selectedslot;
+    public GameObject ItemImg1;
+    public GameObject ItemImg2;
+    public GameObject ItemImg3;
+    public GameObject ItemImg4;
+    public GameObject ItemImg5;
+
+    public GameObject SlotBackground1;
+    public GameObject SlotBackground2;
+    public GameObject SlotBackground3;
+
+    public GameObject SlotTxt1; 
+    public GameObject SlotTxt2; 
+    public GameObject SlotTxt3; 
+    
+    public Sprite EmptySlot;
+    public Sprite StartItem;
+
+    public Transform Player;
+
     private void Awake()
     {
         instance = this;
@@ -14,7 +63,6 @@ public class InventoyManager : MonoBehaviour
 
     void Start()
     {
-        GameObject WheatObj = Instantiate(Wheat);
         items.Add(CreateEmptyItem());
         items.Add(CreateBeginItem());
         items.Add(CreateBeginItem());
@@ -33,7 +81,7 @@ public class InventoyManager : MonoBehaviour
     private Item CreateBeginItem()
     {
         Item newItem = ScriptableObject.CreateInstance<Item>();
-        newItem.itemName =  ItemName.Green_Seed;
+        newItem.itemName =  ItemName.Green;
         newItem.itemImage = StartItem;
         newItem.itemType = ItemType.Crop;
 
@@ -46,21 +94,21 @@ public class InventoyManager : MonoBehaviour
         {
             case "Slot1":
                 selectedslot = 0;
-                SlotImg1.GetComponent<Image>().color = new Color32(255, 0, 0, 100);
-                SlotImg2.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
-                SlotImg3.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
+                SlotBackground1.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
+                SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 break;
             case "Slot2":
                 selectedslot = 1;
-                SlotImg1.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
-                SlotImg2.GetComponent<Image>().color = new Color32(255, 0, 0, 100);
-                SlotImg3.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
+                SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground2.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
+                SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 break;
             case "Slot3":
                 selectedslot = 2;
-                SlotImg1.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
-                SlotImg2.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
-                SlotImg3.GetComponent<Image>().color = new Color32(255, 0, 0, 100);
+                SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground3.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
                 break;
         }
     }
@@ -102,30 +150,30 @@ public class InventoyManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             selectedslot = 0;
-            SlotImg1.GetComponent<Image>().color = new Color32(255, 0, 0, 100);
-            SlotImg2.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
-            SlotImg3.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
+            SlotBackground1.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
+            SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+            SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             selectedslot = 1;
-            SlotImg1.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
-            SlotImg2.GetComponent<Image>().color = new Color32(255, 0, 0, 100);
-            SlotImg3.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
+            SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+            SlotBackground2.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
+            SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             selectedslot = 2;
-            SlotImg1.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
-            SlotImg2.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
-            SlotImg3.GetComponent<Image>().color = new Color32(255, 0, 0, 100);
+            SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+            SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+            SlotBackground3.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
         }
 
-        SlotImg1.GetComponent<Image>().sprite = items[0].itemImage;
-        SlotImg2.GetComponent<Image>().sprite = items[1].itemImage;
-        SlotImg3.GetComponent<Image>().sprite = items[2].itemImage;
+        ItemImg1.GetComponent<Image>().sprite = items[0].itemImage;
+        ItemImg2.GetComponent<Image>().sprite = items[1].itemImage;
+        ItemImg3.GetComponent<Image>().sprite = items[2].itemImage;
 
         //SlotTxt1.GetComponent<Text>().text = items[0].itemName.ToString();
         //SlotTxt2.GetComponent<Text>().text = items[1].itemName.ToString();
