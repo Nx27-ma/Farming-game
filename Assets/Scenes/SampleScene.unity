@@ -2188,92 +2188,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402100504}
   m_CullTransparentMesh: 1
---- !u!1 &453382202
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 453382204}
-  - component: {fileID: 453382203}
-  m_Layer: 0
-  m_Name: InventoryManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &453382203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453382202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aed3aceb2ca8174a9ece9b88f803bf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: []
-  Green: {fileID: 5998236499936317878, guid: a04f11235a67d9f4ba9aa8cf6001256d, type: 3}
-  Grass: {fileID: 5005111446582242418, guid: 1fa201be4a4088848b03a21e193531b0, type: 3}
-  Wheat: {fileID: 6314439650611375462, guid: 0329c6787bad56648a3bef5417a55138, type: 3}
-  Carrot: {fileID: 5774769707254236087, guid: 9c548f30ec6c60646b50f2ac3ee61483, type: 3}
-  Potato: {fileID: 5161002522671689701, guid: ec226b9374aa2be44b7dc6913dfe1377, type: 3}
-  Tomato: {fileID: 5978154501312201044, guid: 215b2c605792ba44a96317cb135de5ac, type: 3}
-  Berrie: {fileID: 1527663380612058903, guid: 1018d63ba64e1124c923c628dba7efb7, type: 3}
-  Melon: {fileID: 8755380627712561450, guid: d0fb96b303b82f448a1aa99080b67770, type: 3}
-  Pumpkin: {fileID: 2437030261416659494, guid: 86efb112ee6e0f94199b8d10ea3ce2f0, type: 3}
-  Beetroot: {fileID: 6702194711660791497, guid: 6a72d3b49a0720e49b8dcd55bf84f78b, type: 3}
-  Cabbage: {fileID: 9159002616823672111, guid: ab5f72de645d88944b3b706e13aebdca, type: 3}
-  Spinach: {fileID: 7424497056395894284, guid: f39537b8f7a5bfa4b9a0f9de8375d8a0, type: 3}
-  Green_Seed: {fileID: 7605625850386188622, guid: 8da0a408a75932241bc12f790d7f60be, type: 3}
-  Grass_Seed: {fileID: 65674209454758812, guid: e406875c8e237494399e75dffe24e7ea, type: 3}
-  Wheat_Seed: {fileID: 4225286305824292154, guid: 9c2e01fb378e1f646aa14c11212a3d01, type: 3}
-  Carrot_Seed: {fileID: 6937050057424588847, guid: ba004ecd9c0bd3144bee3fec917c23d7, type: 3}
-  Potato_Seed: {fileID: 9099638406473089901, guid: 474c307b26c5c3c438668405dd129dd1, type: 3}
-  Tomato_Seed: {fileID: 5418290245128458991, guid: 9d2174a1b4564734999edac324a015c6, type: 3}
-  Berrie_Seed: {fileID: 5563578318457348009, guid: ddbfeda19935c0143ba0d56128d70693, type: 3}
-  Melon_Seed: {fileID: 1322472420542521184, guid: 85ffb6f7112cb9f47abd42dff3a73ed8, type: 3}
-  Pumpkin_Seed: {fileID: 6343475720462947682, guid: 7d733f8b6f12ece489d80b42a964ef35, type: 3}
-  Beetroot_Seed: {fileID: 6659124066725829948, guid: 4d1050e12395891449036d8d8bbcf9fe, type: 3}
-  Cabbage_Seed: {fileID: 208641797780563152, guid: c16c557c2872c5b40a93c4d3326b0341, type: 3}
-  Spinach_Seed: {fileID: 5329229752302522512, guid: 165af8acc69f29f418996786147f7f27, type: 3}
-  Gieter: {fileID: 8948721082199008895, guid: 11d61d0d5850336448fcfe407e1bcad5, type: 3}
-  Onkruidverwijderaar: {fileID: 5172326043809414789, guid: df585e933485880438260d4864604a5a, type: 3}
-  selectedslot: 0
-  ItemImg1: {fileID: 1695263024}
-  ItemImg2: {fileID: 817317826}
-  ItemImg3: {fileID: 564794252}
-  ItemImg4: {fileID: 0}
-  ItemImg5: {fileID: 0}
-  SlotBackground1: {fileID: 1668755318}
-  SlotBackground2: {fileID: 1748832676}
-  SlotBackground3: {fileID: 1706276356}
-  SlotTxt1: {fileID: 1862826756}
-  SlotTxt2: {fileID: 1097860139}
-  SlotTxt3: {fileID: 1622207945}
-  EmptySlot: {fileID: 0}
-  StartItem: {fileID: 21300000, guid: 7eb53a9a59ccda8499d40b5e465b3937, type: 3}
-  Player: {fileID: 1135132440}
---- !u!4 &453382204
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453382202}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.977484, y: -14.706717, z: 0.1199218}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &454755163
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,7 +2273,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 453382203}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventoyManager, Assembly-CSharp
         m_MethodName: SetSelected
         m_Mode: 2
@@ -2723,10 +2637,10 @@ RectTransform:
   - {fileID: 1308489323}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -62.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &485228787
 MonoBehaviour:
@@ -2972,7 +2886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &494345851
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3442,10 +3356,10 @@ RectTransform:
   - {fileID: 489213726}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -107.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566962664
 MonoBehaviour:
@@ -3907,10 +3821,10 @@ RectTransform:
   - {fileID: 689114048}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -287.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &616423869
 MonoBehaviour:
@@ -4021,7 +3935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &617016715
 Transform:
   m_ObjectHideFlags: 0
@@ -4125,10 +4039,10 @@ RectTransform:
   - {fileID: 858250808}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -242.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &638072983
 MonoBehaviour:
@@ -4309,7 +4223,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 453382203}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventoyManager, Assembly-CSharp
         m_MethodName: SetSelected
         m_Mode: 2
@@ -4589,10 +4503,10 @@ RectTransform:
   - {fileID: 616407352}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -377.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700751084
 MonoBehaviour:
@@ -5241,7 +5155,7 @@ Transform:
   m_GameObject: {fileID: 746251482}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -371.2956, y: -268.34952, z: -26.904558}
+  m_LocalPosition: {x: -366.7, y: -262.2, z: -26.904558}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5386,13 +5300,25 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 453382203}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventoyManager, Assembly-CSharp
         m_MethodName: SetSelected
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 773352340}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InventoyManager, Assembly-CSharp
+        m_MethodName: ShetSwap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5961,10 +5887,10 @@ RectTransform:
   - {fileID: 1373086133}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -152.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922548109
 MonoBehaviour:
@@ -6982,7 +6908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1103009737
 Transform:
   m_ObjectHideFlags: 0
@@ -7077,6 +7003,7 @@ GameObject:
   - component: {fileID: 1135132447}
   - component: {fileID: 1135132448}
   - component: {fileID: 1135132449}
+  - component: {fileID: 1135132450}
   m_Layer: 7
   m_Name: PlayerObject
   m_TagString: Player
@@ -7237,6 +7164,89 @@ MonoBehaviour:
   ShopGui: {fileID: 617016714}
   ShedGui: {fileID: 1103009736}
   FarmHouseGui: {fileID: 494345850}
+--- !u!114 &1135132450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135132439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aed3aceb2ca8174a9ece9b88f803bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Inventory: []
+  ItemScripObj:
+  - {fileID: 11400000, guid: 23ffa4f63513120489086878db0bfadc, type: 2}
+  - {fileID: 11400000, guid: 5dba7f8489cb6864498de03895209dcd, type: 2}
+  - {fileID: 11400000, guid: 4076ffdbf18677c44a40698416e05a5a, type: 2}
+  - {fileID: 11400000, guid: 0027962864586114b8bf27a799aeaddf, type: 2}
+  - {fileID: 11400000, guid: 505798eaa7f95b246b3903d150631273, type: 2}
+  - {fileID: 11400000, guid: 38949ecee1037bf4a9ce08c933b0b911, type: 2}
+  - {fileID: 11400000, guid: cc6d915fec8f28145b075d47079ac63c, type: 2}
+  - {fileID: 11400000, guid: 69707c4c7ee9c6c408f9c193c1020225, type: 2}
+  - {fileID: 11400000, guid: 74107711b419db94e9f9b28faf10bc0a, type: 2}
+  - {fileID: 11400000, guid: f921a7c4a6baf764b9a888109dddca86, type: 2}
+  - {fileID: 11400000, guid: 2ede263e36ece664cb647c431686711f, type: 2}
+  - {fileID: 11400000, guid: 13f26f2851945ce478509907632abbda, type: 2}
+  - {fileID: 11400000, guid: a45886003cc36704eb129d888f9cf647, type: 2}
+  - {fileID: 11400000, guid: 7b85de7eac8e50944b17642f605187df, type: 2}
+  - {fileID: 11400000, guid: 45dd4680df767a94da0c09854cc1d3a1, type: 2}
+  - {fileID: 11400000, guid: 6e4fbe4ff64b7a44a900f06598282b5e, type: 2}
+  - {fileID: 11400000, guid: 86b2de265c62834469985e46082b2baa, type: 2}
+  - {fileID: 11400000, guid: fb1e1382b58e29b43a3ca22ed0411abe, type: 2}
+  - {fileID: 11400000, guid: 64581a2b76f6c3549a0a83154c7fd4bf, type: 2}
+  - {fileID: 11400000, guid: a398715c20dbc5f4aa69f66575f80c75, type: 2}
+  - {fileID: 11400000, guid: 80f5431f8fc422a46b28fb32d65ac6c5, type: 2}
+  - {fileID: 11400000, guid: 1b65560c2d6fd404aaa4e87e70586ecb, type: 2}
+  - {fileID: 11400000, guid: 5a4f14ef09ba45146a4b28a1ce1a306a, type: 2}
+  - {fileID: 11400000, guid: f98d3c961c129cb40b6a069cd6a00204, type: 2}
+  - {fileID: 11400000, guid: 3f2ef09243f889c4a9856345b1e0a4c8, type: 2}
+  - {fileID: 11400000, guid: 540660214f09efe4aa894e40447ac108, type: 2}
+  ItemObj:
+  - {fileID: 6702194711660791497, guid: 6a72d3b49a0720e49b8dcd55bf84f78b, type: 3}
+  - {fileID: 1527663380612058903, guid: 1018d63ba64e1124c923c628dba7efb7, type: 3}
+  - {fileID: 9159002616823672111, guid: ab5f72de645d88944b3b706e13aebdca, type: 3}
+  - {fileID: 5774769707254236087, guid: 9c548f30ec6c60646b50f2ac3ee61483, type: 3}
+  - {fileID: 5005111446582242418, guid: 1fa201be4a4088848b03a21e193531b0, type: 3}
+  - {fileID: 5998236499936317878, guid: a04f11235a67d9f4ba9aa8cf6001256d, type: 3}
+  - {fileID: 8755380627712561450, guid: d0fb96b303b82f448a1aa99080b67770, type: 3}
+  - {fileID: 5161002522671689701, guid: ec226b9374aa2be44b7dc6913dfe1377, type: 3}
+  - {fileID: 2437030261416659494, guid: 86efb112ee6e0f94199b8d10ea3ce2f0, type: 3}
+  - {fileID: 7424497056395894284, guid: f39537b8f7a5bfa4b9a0f9de8375d8a0, type: 3}
+  - {fileID: 5978154501312201044, guid: 215b2c605792ba44a96317cb135de5ac, type: 3}
+  - {fileID: 6314439650611375462, guid: 0329c6787bad56648a3bef5417a55138, type: 3}
+  - {fileID: 6659124066725829948, guid: 4d1050e12395891449036d8d8bbcf9fe, type: 3}
+  - {fileID: 5563578318457348009, guid: ddbfeda19935c0143ba0d56128d70693, type: 3}
+  - {fileID: 208641797780563152, guid: c16c557c2872c5b40a93c4d3326b0341, type: 3}
+  - {fileID: 6937050057424588847, guid: ba004ecd9c0bd3144bee3fec917c23d7, type: 3}
+  - {fileID: 65674209454758812, guid: e406875c8e237494399e75dffe24e7ea, type: 3}
+  - {fileID: 7605625850386188622, guid: 8da0a408a75932241bc12f790d7f60be, type: 3}
+  - {fileID: 1322472420542521184, guid: 85ffb6f7112cb9f47abd42dff3a73ed8, type: 3}
+  - {fileID: 9099638406473089901, guid: 474c307b26c5c3c438668405dd129dd1, type: 3}
+  - {fileID: 6343475720462947682, guid: 7d733f8b6f12ece489d80b42a964ef35, type: 3}
+  - {fileID: 5329229752302522512, guid: 165af8acc69f29f418996786147f7f27, type: 3}
+  - {fileID: 5418290245128458991, guid: 9d2174a1b4564734999edac324a015c6, type: 3}
+  - {fileID: 4225286305824292154, guid: 9c2e01fb378e1f646aa14c11212a3d01, type: 3}
+  - {fileID: 8948721082199008895, guid: 11d61d0d5850336448fcfe407e1bcad5, type: 3}
+  - {fileID: 5172326043809414789, guid: df585e933485880438260d4864604a5a, type: 3}
+  selectedslot: 0
+  ItemImg1: {fileID: 1695263024}
+  ItemImg2: {fileID: 817317826}
+  ItemImg3: {fileID: 564794252}
+  ItemImg4: {fileID: 170054576}
+  ItemImg5: {fileID: 1673928884}
+  SlotBackground1: {fileID: 1668755318}
+  SlotBackground2: {fileID: 1748832676}
+  SlotBackground3: {fileID: 1706276356}
+  SlotTxt1: {fileID: 1862826756}
+  SlotTxt2: {fileID: 1097860139}
+  SlotTxt3: {fileID: 1622207945}
+  ShedGui: {fileID: 1103009736}
+  EmptySlot: {fileID: 0}
+  StartItem: {fileID: 21300000, guid: 7eb53a9a59ccda8499d40b5e465b3937, type: 3}
+  Player: {fileID: 1135132440}
 --- !u!1 &1151797691
 GameObject:
   m_ObjectHideFlags: 0
@@ -7803,10 +7813,10 @@ RectTransform:
   - {fileID: 1682075658}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -17.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1247344009
 MonoBehaviour:
@@ -8326,10 +8336,10 @@ RectTransform:
   - {fileID: 170054577}
   m_Father: {fileID: 1286567856}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1342996815
 MonoBehaviour:
@@ -8375,7 +8385,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 453382203}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventoyManager, Assembly-CSharp
         m_MethodName: SetSelected
         m_Mode: 2
@@ -9185,10 +9195,10 @@ RectTransform:
   - {fileID: 727607241}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -422.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401438585
 MonoBehaviour:
@@ -10034,10 +10044,10 @@ RectTransform:
   - {fileID: 1673928885}
   m_Father: {fileID: 1286567856}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1488165780
 MonoBehaviour:
@@ -10083,7 +10093,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 453382203}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventoyManager, Assembly-CSharp
         m_MethodName: SetSelected
         m_Mode: 2
@@ -10334,10 +10344,10 @@ RectTransform:
   - {fileID: 402100505}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -197.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544297062
 MonoBehaviour:
@@ -10613,10 +10623,10 @@ RectTransform:
   - {fileID: 1904004670}
   m_Father: {fileID: 1655888285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 85, y: -332.5}
+  m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1617869470
 MonoBehaviour:
@@ -13871,7 +13881,6 @@ SceneRoots:
   - {fileID: 1964552100}
   - {fileID: 1151797695}
   - {fileID: 955297906}
-  - {fileID: 453382204}
   - {fileID: 1686327313}
   - {fileID: 363052236}
   - {fileID: 1655297108}

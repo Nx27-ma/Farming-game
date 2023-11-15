@@ -23,8 +23,6 @@ public class CollistionController : MonoBehaviour
     public GameObject ShedGui;
     public GameObject FarmHouseGui;
 
-    private float checkRadius = 2f;
-
     private void Update()
     {
         if (IsObjectInsideObject(PlayerCheck, ShopFloorObject))
@@ -115,4 +113,3 @@ public class CollistionController : MonoBehaviour
         return otherCollider.bounds.Contains(objectCollider.bounds.min) && otherCollider.bounds.Contains(objectCollider.bounds.max);
     }
 }
-
