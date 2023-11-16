@@ -1,12 +1,22 @@
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CollistionController : MonoBehaviour
 {
-    public List<ScriptableObject> Plots = new List<ScriptableObject>();
-    public List<GameObject> PlotsObj = new List<GameObject>();
-    public List<GameObject> FarmField = new List<GameObject>();
+    public List<GameObject> PlotObjs = new List<GameObject>();
+    public List<Plots> PlotScriptObjs = new List<Plots>();
+    public List<GameObject> FarmFieldObjs = new List<GameObject>();
+
+    private int[,] my2DArray;
+
+    public GameObject PlotGui;
+    public TextMeshProUGUI PlotText;
+
+    public GameObject FarmFieldGui;
+    public TextMeshProUGUI FarmFieldText;
 
     public Transform PlayerCheck;
     public Transform ShopCheck;
@@ -105,6 +115,47 @@ public class CollistionController : MonoBehaviour
         {
             FarmHouseRoofObject.SetActive(true);
             FarmHouseGui.SetActive(false);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
+
+            for (int i = 0; i < PlotObjs.Count; i++)
+            {
+                Debug.Log(IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform));
+                if (IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform))
+                {
+                    if (PlotScriptObjs[0].Gekocht == false)
+                    {
+                        int value = 0;
+                        for (int g = 0; g < 8; g++)
+                        {
+                            for (int j = 0; j < 3; j++)
+                            {
+                                my2DArray[i, j] = value;
+                                value++;
+                            }
+                        }
+                        for (int n = 0; n < 4; n++)
+                        {
+                            if (IsMouseInsideObject(mousePosition2D, FarmFieldObjs[my2DArray[i, n]].transform))
+                            {
+                                FarmFieldText.text = FarmFieldObjs[my2DArray[i, n]].name;
+                                FarmFieldGui.SetActive(true);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        PlotText.text = PlotObjs[i].name;
+                        PlotGui.SetActive(true);
+                    }
+                    PlotGui.SetActive(false);
+                    FarmFieldGui.SetActive(false);
+                }
+            }
         }
     }
     

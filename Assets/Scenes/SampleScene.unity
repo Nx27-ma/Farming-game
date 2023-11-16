@@ -439,7 +439,6 @@ GameObject:
   - component: {fileID: 19343428}
   - component: {fileID: 19343430}
   - component: {fileID: 19343431}
-  - component: {fileID: 19343433}
   - component: {fileID: 19343432}
   m_Layer: 9
   m_Name: FarmField 26
@@ -621,25 +620,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &19343433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19343427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 708166802}
-  PlotScriptObj: {fileID: 11400000, guid: 873830ca3cfec81419d3c6c6461b49bb, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 19343427}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &25994558
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +631,6 @@ GameObject:
   - component: {fileID: 25994559}
   - component: {fileID: 25994561}
   - component: {fileID: 25994562}
-  - component: {fileID: 25994564}
   - component: {fileID: 25994563}
   m_Layer: 9
   m_Name: FarmField 24
@@ -833,25 +812,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &25994564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 25994558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1751203183}
-  PlotScriptObj: {fileID: 11400000, guid: f704b682e9f54564f9b1ed290c709af2, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 25994558}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &28339825
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +957,6 @@ GameObject:
   - component: {fileID: 40294271}
   - component: {fileID: 40294273}
   - component: {fileID: 40294274}
-  - component: {fileID: 40294276}
   - component: {fileID: 40294275}
   m_Layer: 9
   m_Name: FarmField 21
@@ -1179,25 +1138,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &40294276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40294270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1751203183}
-  PlotScriptObj: {fileID: 11400000, guid: f704b682e9f54564f9b1ed290c709af2, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 40294270}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &40320418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,7 +1576,6 @@ GameObject:
   - component: {fileID: 153927269}
   - component: {fileID: 153927271}
   - component: {fileID: 153927272}
-  - component: {fileID: 153927274}
   - component: {fileID: 153927273}
   m_Layer: 9
   m_Name: FarmField 6
@@ -1818,25 +1757,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &153927274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153927268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1351427242}
-  PlotScriptObj: {fileID: 11400000, guid: ac25e1c389cb3da459e703cba9dd7e27, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 153927268}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &166691793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,7 +1918,6 @@ GameObject:
   - component: {fileID: 183190940}
   - component: {fileID: 183190942}
   - component: {fileID: 183190943}
-  - component: {fileID: 183190945}
   - component: {fileID: 183190944}
   m_Layer: 9
   m_Name: FarmField 17
@@ -2180,25 +2099,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &183190945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183190939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1664233357}
-  PlotScriptObj: {fileID: 11400000, guid: 4d6ee144b8b70a04dbf5f19fec446944, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 183190939}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &204389814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,7 +2110,6 @@ GameObject:
   - component: {fileID: 204389815}
   - component: {fileID: 204389817}
   - component: {fileID: 204389818}
-  - component: {fileID: 204389820}
   - component: {fileID: 204389819}
   m_Layer: 9
   m_Name: FarmField 34
@@ -2392,25 +2291,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &204389820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204389814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 589631401}
-  PlotScriptObj: {fileID: 11400000, guid: e1bd7d81b4c9feb49b0ca19ccd1db6ac, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 204389814}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &222318192
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,7 +2302,6 @@ GameObject:
   - component: {fileID: 222318193}
   - component: {fileID: 222318195}
   - component: {fileID: 222318196}
-  - component: {fileID: 222318198}
   - component: {fileID: 222318197}
   m_Layer: 9
   m_Name: FarmField 11
@@ -2604,25 +2483,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &222318198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222318192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 566020970}
-  PlotScriptObj: {fileID: 11400000, guid: 1204d5a2b1cf59945ac618b5b4b598ef, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 222318192}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &263634356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,7 +2494,6 @@ GameObject:
   - component: {fileID: 263634357}
   - component: {fileID: 263634359}
   - component: {fileID: 263634360}
-  - component: {fileID: 263634362}
   - component: {fileID: 263634361}
   m_Layer: 9
   m_Name: FarmField 19
@@ -2816,25 +2675,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &263634362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263634356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1664233357}
-  PlotScriptObj: {fileID: 11400000, guid: 4d6ee144b8b70a04dbf5f19fec446944, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 263634356}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &300969980
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,7 +3359,6 @@ GameObject:
   - component: {fileID: 476891334}
   - component: {fileID: 476891336}
   - component: {fileID: 476891337}
-  - component: {fileID: 476891339}
   - component: {fileID: 476891338}
   m_Layer: 9
   m_Name: FarmField 27
@@ -3701,25 +3540,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &476891339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476891333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 708166802}
-  PlotScriptObj: {fileID: 11400000, guid: 873830ca3cfec81419d3c6c6461b49bb, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 476891333}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &479507157
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,7 +4014,6 @@ GameObject:
   - component: {fileID: 507622830}
   - component: {fileID: 507622832}
   - component: {fileID: 507622833}
-  - component: {fileID: 507622835}
   - component: {fileID: 507622834}
   m_Layer: 9
   m_Name: FarmField 35
@@ -4376,25 +4195,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &507622835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507622829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 589631401}
-  PlotScriptObj: {fileID: 11400000, guid: e1bd7d81b4c9feb49b0ca19ccd1db6ac, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 507622829}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4586,6 +4386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566020971}
   - component: {fileID: 566020972}
+  - component: {fileID: 566020973}
   m_Layer: 9
   m_Name: Plot 3
   m_TagString: Floor
@@ -4628,6 +4429,51 @@ MonoBehaviour:
   farmland2: {fileID: 1736815560}
   farmland3: {fileID: 222318196}
   farmland4: {fileID: 1644331989}
+--- !u!61 &566020973
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566020970}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &566962662
 GameObject:
   m_ObjectHideFlags: 0
@@ -4771,6 +4617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589631402}
   - component: {fileID: 589631403}
+  - component: {fileID: 589631404}
   m_Layer: 9
   m_Name: Plot 9
   m_TagString: Floor
@@ -4813,6 +4660,51 @@ MonoBehaviour:
   farmland2: {fileID: 204389818}
   farmland3: {fileID: 507622833}
   farmland4: {fileID: 1722234717}
+--- !u!61 &589631404
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589631401}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &605782176
 GameObject:
   m_ObjectHideFlags: 0
@@ -4824,7 +4716,6 @@ GameObject:
   - component: {fileID: 605782177}
   - component: {fileID: 605782179}
   - component: {fileID: 605782180}
-  - component: {fileID: 605782182}
   - component: {fileID: 605782181}
   m_Layer: 9
   m_Name: FarmField 23
@@ -5006,25 +4897,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &605782182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605782176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1751203183}
-  PlotScriptObj: {fileID: 11400000, guid: f704b682e9f54564f9b1ed290c709af2, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 605782176}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &616407351
 GameObject:
   m_ObjectHideFlags: 0
@@ -5336,6 +5208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 631872026}
   - component: {fileID: 631872027}
+  - component: {fileID: 631872028}
   m_Layer: 9
   m_Name: Plot 4
   m_TagString: Floor
@@ -5378,6 +5251,51 @@ MonoBehaviour:
   farmland2: {fileID: 1459084997}
   farmland3: {fileID: 1880095653}
   farmland4: {fileID: 1164391449}
+--- !u!61 &631872028
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631872025}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &638072981
 GameObject:
   m_ObjectHideFlags: 0
@@ -6030,6 +5948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 708166803}
   - component: {fileID: 708166804}
+  - component: {fileID: 708166805}
   m_Layer: 9
   m_Name: Plot 7
   m_TagString: Floor
@@ -6072,6 +5991,51 @@ MonoBehaviour:
   farmland2: {fileID: 19343431}
   farmland3: {fileID: 476891337}
   farmland4: {fileID: 1156910938}
+--- !u!61 &708166805
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708166802}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &727607240
 GameObject:
   m_ObjectHideFlags: 0
@@ -6400,7 +6364,6 @@ GameObject:
   - component: {fileID: 740946233}
   - component: {fileID: 740946235}
   - component: {fileID: 740946236}
-  - component: {fileID: 740946238}
   - component: {fileID: 740946237}
   m_Layer: 9
   m_Name: FarmField 29
@@ -6582,25 +6545,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &740946238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740946232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 754799638}
-  PlotScriptObj: {fileID: 11400000, guid: 62060dff1fcfd4041a22ac3807bdd12c, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 740946232}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &742314790
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,6 +6664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 754799639}
   - component: {fileID: 754799640}
+  - component: {fileID: 754799641}
   m_Layer: 9
   m_Name: Plot 8
   m_TagString: Floor
@@ -6762,6 +6707,51 @@ MonoBehaviour:
   farmland2: {fileID: 1343398071}
   farmland3: {fileID: 833223680}
   farmland4: {fileID: 1794374472}
+--- !u!61 &754799641
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754799638}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &773352338
 GameObject:
   m_ObjectHideFlags: 0
@@ -7128,7 +7118,6 @@ GameObject:
   - component: {fileID: 833223677}
   - component: {fileID: 833223679}
   - component: {fileID: 833223680}
-  - component: {fileID: 833223682}
   - component: {fileID: 833223681}
   m_Layer: 9
   m_Name: FarmField 31
@@ -7310,25 +7299,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &833223682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833223676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 754799638}
-  PlotScriptObj: {fileID: 11400000, guid: 62060dff1fcfd4041a22ac3807bdd12c, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 833223676}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &851905966
 GameObject:
   m_ObjectHideFlags: 0
@@ -7743,7 +7713,6 @@ GameObject:
   - component: {fileID: 944199275}
   - component: {fileID: 944199277}
   - component: {fileID: 944199278}
-  - component: {fileID: 944199280}
   - component: {fileID: 944199279}
   m_Layer: 9
   m_Name: FarmField 33
@@ -7925,25 +7894,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &944199280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944199274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 589631401}
-  PlotScriptObj: {fileID: 11400000, guid: e1bd7d81b4c9feb49b0ca19ccd1db6ac, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 944199274}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &949073912
 GameObject:
   m_ObjectHideFlags: 0
@@ -7955,7 +7905,6 @@ GameObject:
   - component: {fileID: 949073913}
   - component: {fileID: 949073915}
   - component: {fileID: 949073916}
-  - component: {fileID: 949073918}
   - component: {fileID: 949073917}
   m_Layer: 9
   m_Name: FarmField 2
@@ -8137,25 +8086,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &949073918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949073912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 2067761770}
-  PlotScriptObj: {fileID: 11400000, guid: 3eee4a2cd95685c40971330138880414, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 949073912}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &955297903
 GameObject:
   m_ObjectHideFlags: 0
@@ -8235,7 +8165,6 @@ GameObject:
   - component: {fileID: 986060848}
   - component: {fileID: 986060850}
   - component: {fileID: 986060851}
-  - component: {fileID: 986060853}
   - component: {fileID: 986060852}
   m_Layer: 9
   m_Name: FarmField 3
@@ -8417,25 +8346,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &986060853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986060847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 2067761770}
-  PlotScriptObj: {fileID: 11400000, guid: 3eee4a2cd95685c40971330138880414, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 986060847}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1044252653
 GameObject:
   m_ObjectHideFlags: 0
@@ -8447,7 +8357,6 @@ GameObject:
   - component: {fileID: 1044252654}
   - component: {fileID: 1044252656}
   - component: {fileID: 1044252657}
-  - component: {fileID: 1044252659}
   - component: {fileID: 1044252658}
   m_Layer: 9
   m_Name: FarmField 1
@@ -8629,25 +8538,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1044252659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044252653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 2067761770}
-  PlotScriptObj: {fileID: 11400000, guid: 3eee4a2cd95685c40971330138880414, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1044252653}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1051381740
 GameObject:
   m_ObjectHideFlags: 0
@@ -9240,7 +9130,7 @@ Transform:
   m_GameObject: {fileID: 1135132439}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15.5, y: -8.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9367,17 +9257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6c09457c171ed46a4534ea5bb5c7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plots:
-  - {fileID: 11400000, guid: 3eee4a2cd95685c40971330138880414, type: 2}
-  - {fileID: 11400000, guid: ac25e1c389cb3da459e703cba9dd7e27, type: 2}
-  - {fileID: 11400000, guid: 1204d5a2b1cf59945ac618b5b4b598ef, type: 2}
-  - {fileID: 11400000, guid: eb16f70a204412a44ae8f9eb7480d158, type: 2}
-  - {fileID: 11400000, guid: 4d6ee144b8b70a04dbf5f19fec446944, type: 2}
-  - {fileID: 11400000, guid: f704b682e9f54564f9b1ed290c709af2, type: 2}
-  - {fileID: 11400000, guid: 873830ca3cfec81419d3c6c6461b49bb, type: 2}
-  - {fileID: 11400000, guid: 62060dff1fcfd4041a22ac3807bdd12c, type: 2}
-  - {fileID: 11400000, guid: e1bd7d81b4c9feb49b0ca19ccd1db6ac, type: 2}
-  PlotsObj:
+  PlotObjs:
   - {fileID: 2067761770}
   - {fileID: 1351427242}
   - {fileID: 566020970}
@@ -9387,7 +9267,17 @@ MonoBehaviour:
   - {fileID: 708166802}
   - {fileID: 754799638}
   - {fileID: 589631401}
-  FarmField:
+  PlotScriptObjs:
+  - {fileID: 11400000, guid: 3eee4a2cd95685c40971330138880414, type: 2}
+  - {fileID: 11400000, guid: ac25e1c389cb3da459e703cba9dd7e27, type: 2}
+  - {fileID: 11400000, guid: 1204d5a2b1cf59945ac618b5b4b598ef, type: 2}
+  - {fileID: 11400000, guid: eb16f70a204412a44ae8f9eb7480d158, type: 2}
+  - {fileID: 11400000, guid: 4d6ee144b8b70a04dbf5f19fec446944, type: 2}
+  - {fileID: 11400000, guid: f704b682e9f54564f9b1ed290c709af2, type: 2}
+  - {fileID: 11400000, guid: 873830ca3cfec81419d3c6c6461b49bb, type: 2}
+  - {fileID: 11400000, guid: 62060dff1fcfd4041a22ac3807bdd12c, type: 2}
+  - {fileID: 11400000, guid: e1bd7d81b4c9feb49b0ca19ccd1db6ac, type: 2}
+  FarmFieldObjs:
   - {fileID: 1044252653}
   - {fileID: 949073912}
   - {fileID: 986060847}
@@ -9424,6 +9314,10 @@ MonoBehaviour:
   - {fileID: 204389814}
   - {fileID: 507622829}
   - {fileID: 1722234713}
+  PlotGui: {fileID: 10243492}
+  PlotText: {fileID: 28339826}
+  FarmFieldGui: {fileID: 1927566432}
+  FarmFieldText: {fileID: 1523587754}
   PlayerCheck: {fileID: 1135132440}
   ShopCheck: {fileID: 1434073748}
   ShedCheck: {fileID: 40320420}
@@ -9646,7 +9540,6 @@ GameObject:
   - component: {fileID: 1156910935}
   - component: {fileID: 1156910937}
   - component: {fileID: 1156910938}
-  - component: {fileID: 1156910940}
   - component: {fileID: 1156910939}
   m_Layer: 9
   m_Name: FarmField 28
@@ -9828,25 +9721,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1156910940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156910934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 708166802}
-  PlotScriptObj: {fileID: 11400000, guid: 873830ca3cfec81419d3c6c6461b49bb, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1156910934}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1164391445
 GameObject:
   m_ObjectHideFlags: 0
@@ -9858,7 +9732,6 @@ GameObject:
   - component: {fileID: 1164391446}
   - component: {fileID: 1164391448}
   - component: {fileID: 1164391449}
-  - component: {fileID: 1164391451}
   - component: {fileID: 1164391450}
   m_Layer: 9
   m_Name: FarmField 16
@@ -10040,25 +9913,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1164391451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164391445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 631872025}
-  PlotScriptObj: {fileID: 11400000, guid: eb16f70a204412a44ae8f9eb7480d158, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1164391445}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1206346838
 GameObject:
   m_ObjectHideFlags: 0
@@ -10371,7 +10225,6 @@ GameObject:
   - component: {fileID: 1285113356}
   - component: {fileID: 1285113355}
   - component: {fileID: 1285113357}
-  - component: {fileID: 1285113359}
   - component: {fileID: 1285113358}
   m_Layer: 9
   m_Name: FarmField 5
@@ -10598,25 +10451,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1285113359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285113353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1351427242}
-  PlotScriptObj: {fileID: 11400000, guid: ac25e1c389cb3da459e703cba9dd7e27, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1285113353}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1286567855
 GameObject:
   m_ObjectHideFlags: 0
@@ -11093,7 +10927,6 @@ GameObject:
   - component: {fileID: 1343398068}
   - component: {fileID: 1343398070}
   - component: {fileID: 1343398071}
-  - component: {fileID: 1343398073}
   - component: {fileID: 1343398072}
   m_Layer: 9
   m_Name: FarmField 30
@@ -11275,25 +11108,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1343398073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343398067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 754799638}
-  PlotScriptObj: {fileID: 11400000, guid: 62060dff1fcfd4041a22ac3807bdd12c, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1343398067}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1351427242
 GameObject:
   m_ObjectHideFlags: 0
@@ -11304,6 +11118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1351427243}
   - component: {fileID: 1351427244}
+  - component: {fileID: 1351427245}
   m_Layer: 9
   m_Name: Plot 2
   m_TagString: Floor
@@ -11346,6 +11161,51 @@ MonoBehaviour:
   farmland2: {fileID: 153927272}
   farmland3: {fileID: 1595636981}
   farmland4: {fileID: 1438372145}
+--- !u!61 &1351427245
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351427242}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1357461032
 GameObject:
   m_ObjectHideFlags: 0
@@ -12018,7 +11878,6 @@ GameObject:
   - component: {fileID: 1411574919}
   - component: {fileID: 1411574921}
   - component: {fileID: 1411574922}
-  - component: {fileID: 1411574924}
   - component: {fileID: 1411574923}
   m_Layer: 9
   m_Name: FarmField 4
@@ -12200,25 +12059,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1411574924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411574918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 2067761770}
-  PlotScriptObj: {fileID: 11400000, guid: 3eee4a2cd95685c40971330138880414, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1411574918}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1434073746
 GameObject:
   m_ObjectHideFlags: 0
@@ -12360,7 +12200,6 @@ GameObject:
   - component: {fileID: 1438372142}
   - component: {fileID: 1438372144}
   - component: {fileID: 1438372145}
-  - component: {fileID: 1438372147}
   - component: {fileID: 1438372146}
   m_Layer: 9
   m_Name: FarmField 8
@@ -12542,25 +12381,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1438372147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438372141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1351427242}
-  PlotScriptObj: {fileID: 11400000, guid: ac25e1c389cb3da459e703cba9dd7e27, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1438372141}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1459084993
 GameObject:
   m_ObjectHideFlags: 0
@@ -12769,10 +12589,10 @@ MonoBehaviour:
   PlotObj: {fileID: 631872025}
   PlotScriptObj: {fileID: 11400000, guid: eb16f70a204412a44ae8f9eb7480d158, type: 2}
   PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
+  PlotText: {fileID: 28339826}
   FarmFieldObj: {fileID: 1459084993}
   FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
+  FarmFieldText: {fileID: 1523587754}
 --- !u!1 &1473677160
 GameObject:
   m_ObjectHideFlags: 0
@@ -12784,7 +12604,6 @@ GameObject:
   - component: {fileID: 1473677161}
   - component: {fileID: 1473677163}
   - component: {fileID: 1473677164}
-  - component: {fileID: 1473677166}
   - component: {fileID: 1473677165}
   m_Layer: 9
   m_Name: FarmField 20
@@ -12966,25 +12785,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1473677166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473677160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1664233357}
-  PlotScriptObj: {fileID: 11400000, guid: 4d6ee144b8b70a04dbf5f19fec446944, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1473677160}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1488165778
 GameObject:
   m_ObjectHideFlags: 0
@@ -13565,7 +13365,6 @@ GameObject:
   - component: {fileID: 1595636978}
   - component: {fileID: 1595636980}
   - component: {fileID: 1595636981}
-  - component: {fileID: 1595636983}
   - component: {fileID: 1595636982}
   m_Layer: 9
   m_Name: FarmField 7
@@ -13747,25 +13546,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1595636983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595636977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1351427242}
-  PlotScriptObj: {fileID: 11400000, guid: ac25e1c389cb3da459e703cba9dd7e27, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1595636977}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1617869468
 GameObject:
   m_ObjectHideFlags: 0
@@ -14174,7 +13954,6 @@ GameObject:
   - component: {fileID: 1644331986}
   - component: {fileID: 1644331988}
   - component: {fileID: 1644331989}
-  - component: {fileID: 1644331991}
   - component: {fileID: 1644331990}
   m_Layer: 9
   m_Name: FarmField 12
@@ -14356,25 +14135,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1644331991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644331985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 566020970}
-  PlotScriptObj: {fileID: 11400000, guid: 1204d5a2b1cf59945ac618b5b4b598ef, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1644331985}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1650764142
 GameObject:
   m_ObjectHideFlags: 0
@@ -14386,7 +14146,6 @@ GameObject:
   - component: {fileID: 1650764143}
   - component: {fileID: 1650764145}
   - component: {fileID: 1650764146}
-  - component: {fileID: 1650764148}
   - component: {fileID: 1650764147}
   m_Layer: 9
   m_Name: FarmField 25
@@ -14568,25 +14327,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1650764148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650764142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 708166802}
-  PlotScriptObj: {fileID: 11400000, guid: 873830ca3cfec81419d3c6c6461b49bb, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1650764142}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1655888284
 GameObject:
   m_ObjectHideFlags: 0
@@ -14668,6 +14408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1664233358}
   - component: {fileID: 1664233359}
+  - component: {fileID: 1664233360}
   m_Layer: 9
   m_Name: Plot 5
   m_TagString: Floor
@@ -14710,6 +14451,51 @@ MonoBehaviour:
   farmland2: {fileID: 2131449660}
   farmland3: {fileID: 263634360}
   farmland4: {fileID: 1473677164}
+--- !u!61 &1664233360
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664233357}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1668755318
 GameObject:
   m_ObjectHideFlags: 0
@@ -15188,7 +14974,6 @@ GameObject:
   - component: {fileID: 1708071492}
   - component: {fileID: 1708071494}
   - component: {fileID: 1708071495}
-  - component: {fileID: 1708071497}
   - component: {fileID: 1708071496}
   m_Layer: 9
   m_Name: FarmField 13
@@ -15370,25 +15155,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1708071497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708071491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 631872025}
-  PlotScriptObj: {fileID: 11400000, guid: eb16f70a204412a44ae8f9eb7480d158, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1708071491}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1722234713
 GameObject:
   m_ObjectHideFlags: 0
@@ -15400,7 +15166,6 @@ GameObject:
   - component: {fileID: 1722234714}
   - component: {fileID: 1722234716}
   - component: {fileID: 1722234717}
-  - component: {fileID: 1722234719}
   - component: {fileID: 1722234718}
   m_Layer: 9
   m_Name: FarmField 36
@@ -15582,25 +15347,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1722234719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722234713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 589631401}
-  PlotScriptObj: {fileID: 11400000, guid: e1bd7d81b4c9feb49b0ca19ccd1db6ac, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1722234713}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1736815556
 GameObject:
   m_ObjectHideFlags: 0
@@ -15612,7 +15358,6 @@ GameObject:
   - component: {fileID: 1736815557}
   - component: {fileID: 1736815559}
   - component: {fileID: 1736815560}
-  - component: {fileID: 1736815562}
   - component: {fileID: 1736815561}
   m_Layer: 9
   m_Name: FarmField 10
@@ -15794,25 +15539,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1736815562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736815556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 566020970}
-  PlotScriptObj: {fileID: 11400000, guid: 1204d5a2b1cf59945ac618b5b4b598ef, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1736815556}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1748832676
 GameObject:
   m_ObjectHideFlags: 0
@@ -15898,6 +15624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1751203184}
   - component: {fileID: 1751203185}
+  - component: {fileID: 1751203186}
   m_Layer: 9
   m_Name: Plot 6
   m_TagString: Floor
@@ -15940,6 +15667,51 @@ MonoBehaviour:
   farmland2: {fileID: 1947000361}
   farmland3: {fileID: 605782180}
   farmland4: {fileID: 25994562}
+--- !u!61 &1751203186
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751203183}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1794374468
 GameObject:
   m_ObjectHideFlags: 0
@@ -15951,7 +15723,6 @@ GameObject:
   - component: {fileID: 1794374469}
   - component: {fileID: 1794374471}
   - component: {fileID: 1794374472}
-  - component: {fileID: 1794374474}
   - component: {fileID: 1794374473}
   m_Layer: 9
   m_Name: FarmField 32
@@ -16133,25 +15904,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1794374474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794374468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 754799638}
-  PlotScriptObj: {fileID: 11400000, guid: 62060dff1fcfd4041a22ac3807bdd12c, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1794374468}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1862826756
 GameObject:
   m_ObjectHideFlags: 0
@@ -16615,10 +16367,10 @@ MonoBehaviour:
   PlotObj: {fileID: 631872025}
   PlotScriptObj: {fileID: 11400000, guid: eb16f70a204412a44ae8f9eb7480d158, type: 2}
   PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
+  PlotText: {fileID: 28339826}
   FarmFieldObj: {fileID: 1880095649}
   FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
+  FarmFieldText: {fileID: 1523587754}
 --- !u!1 &1904004669
 GameObject:
   m_ObjectHideFlags: 0
@@ -16762,7 +16514,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1927566433}
-  - component: {fileID: 1927566434}
   m_Layer: 5
   m_Name: FarmFieldGui
   m_TagString: Untagged
@@ -16791,21 +16542,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1927566434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927566432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2b048fe64b1d2340af9d96d5afc0910, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FarmFields: []
-  FarmFieldGui: {fileID: 0}
-  GuiText: {fileID: 0}
 --- !u!1 &1932321700
 GameObject:
   m_ObjectHideFlags: 0
@@ -16892,7 +16628,6 @@ GameObject:
   - component: {fileID: 1947000358}
   - component: {fileID: 1947000360}
   - component: {fileID: 1947000361}
-  - component: {fileID: 1947000363}
   - component: {fileID: 1947000362}
   m_Layer: 9
   m_Name: FarmField 22
@@ -17074,25 +16809,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1947000363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947000357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1751203183}
-  PlotScriptObj: {fileID: 11400000, guid: f704b682e9f54564f9b1ed290c709af2, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1947000357}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1954192964
 GameObject:
   m_ObjectHideFlags: 0
@@ -17104,7 +16820,6 @@ GameObject:
   - component: {fileID: 1954192965}
   - component: {fileID: 1954192967}
   - component: {fileID: 1954192968}
-  - component: {fileID: 1954192970}
   - component: {fileID: 1954192969}
   m_Layer: 9
   m_Name: FarmField 9
@@ -17286,25 +17001,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1954192970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954192964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 566020970}
-  PlotScriptObj: {fileID: 11400000, guid: 1204d5a2b1cf59945ac618b5b4b598ef, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 1954192964}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1 &1964552099
 GameObject:
   m_ObjectHideFlags: 0
@@ -17482,6 +17178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2067761771}
   - component: {fileID: 2067761772}
+  - component: {fileID: 2067761773}
   m_Layer: 9
   m_Name: Plot 1
   m_TagString: Floor
@@ -17524,6 +17221,51 @@ MonoBehaviour:
   farmland2: {fileID: 949073916}
   farmland3: {fileID: 986060851}
   farmland4: {fileID: 1411574922}
+--- !u!61 &2067761773
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067761770}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2131449656
 GameObject:
   m_ObjectHideFlags: 0
@@ -17535,7 +17277,6 @@ GameObject:
   - component: {fileID: 2131449657}
   - component: {fileID: 2131449659}
   - component: {fileID: 2131449660}
-  - component: {fileID: 2131449662}
   - component: {fileID: 2131449661}
   m_Layer: 9
   m_Name: FarmField 18
@@ -17717,25 +17458,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2131449662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131449656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb08de2ff60d2347bd2b286af698ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlotObj: {fileID: 1664233357}
-  PlotScriptObj: {fileID: 11400000, guid: 4d6ee144b8b70a04dbf5f19fec446944, type: 2}
-  PlotGui: {fileID: 10243492}
-  PlotText: {fileID: 28339825}
-  FarmFieldObj: {fileID: 2131449656}
-  FarmFieldGui: {fileID: 1927566432}
-  FarmFieldText: {fileID: 1523587752}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
