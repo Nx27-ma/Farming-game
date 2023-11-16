@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CollistionController : MonoBehaviour
 {
@@ -7,10 +8,10 @@ public class CollistionController : MonoBehaviour
     public Transform ShedCheck;
     public Transform FarmHouseCheck;
 
-    public Transform ShopGuiCheck;
-    public Transform ShedGuiCheck;
-    public Transform FarmHouseGuiCheck;
-    public Transform HotbarGuiCheck;
+    public Image ShopGuiCheck;
+    public Image ShedGuiCheck;
+    public Image FarmHouseGuiCheck;
+    public Image HotbarGuiCheck;
 
     public GameObject ShopFloorObject;
     public GameObject ShedFloorObject;
@@ -32,7 +33,10 @@ public class CollistionController : MonoBehaviour
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
 
-                if (IsMouseInsideObject(mousePosition2D, ShopCheck) || IsMouseInsideObject(mousePosition2D, ShopGuiCheck) || IsMouseInsideObject(mousePosition2D, HotbarGuiCheck))
+                Debug.Log(IsMouseOverImage(ShopGuiCheck));
+                Debug.Log(IsMouseOverImage(HotbarGuiCheck));
+
+                if (IsMouseInsideObject(mousePosition2D, ShopCheck) || IsMouseOverImage(ShopGuiCheck) || IsMouseOverImage(HotbarGuiCheck))
                 {
                     ShopGui.SetActive(true);
                 }
@@ -57,7 +61,7 @@ public class CollistionController : MonoBehaviour
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
 
-                if (IsMouseInsideObject(mousePosition2D, ShedCheck) || IsMouseInsideObject(mousePosition2D, ShedGuiCheck) || IsMouseInsideObject(mousePosition2D, HotbarGuiCheck))
+                if (IsMouseInsideObject(mousePosition2D, ShedCheck) || IsMouseOverImage(ShedGuiCheck) || IsMouseOverImage(HotbarGuiCheck))
                 {
                     ShedGui.SetActive(true);
                 }
@@ -81,7 +85,7 @@ public class CollistionController : MonoBehaviour
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
 
-                if (IsMouseInsideObject(mousePosition2D, FarmHouseCheck) || IsMouseInsideObject(mousePosition2D, FarmHouseGuiCheck) || IsMouseInsideObject(mousePosition2D, HotbarGuiCheck))
+                if (IsMouseInsideObject(mousePosition2D, FarmHouseCheck) || IsMouseOverImage(FarmHouseGuiCheck) || IsMouseOverImage(HotbarGuiCheck))
                 {
                     FarmHouseGui.SetActive(true);
                 }
@@ -111,5 +115,25 @@ public class CollistionController : MonoBehaviour
         Collider2D otherCollider = otherGameObject.GetComponent<Collider2D>();
 
         return otherCollider.bounds.Contains(objectCollider.bounds.min) && otherCollider.bounds.Contains(objectCollider.bounds.max);
+    }
+
+    bool IsMouseOverImage(Image uiImage)
+    {
+        if (uiImage == null)
+        {
+            return false;
+        }
+
+        RectTransform rectTransform = uiImage.rectTransform;
+
+        Vector2 localMousePosition;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, Input.mousePosition, null, out localMousePosition);
+
+        if (rectTransform.rect.Contains(localMousePosition))
+        {
+            return true;
+        }
+
+        return false;
     }
 }

@@ -45,6 +45,8 @@ public class InventoyManager : MonoBehaviour
         Inventory.Add(CreateEmptyItem());
         Inventory.Add(CreateBeginItem());
         Inventory.Add(CreateBeginItem());
+        Inventory.Add(CreateEmptyItem());
+        Inventory.Add(CreateEmptyItem());
     }
 
     private Item CreateEmptyItem()
@@ -98,17 +100,17 @@ public class InventoyManager : MonoBehaviour
             Debug.Log("active");
             if (Inventory[3].itemName == ItemName.Empty)
             {
-                Inventory[3].itemName = Inventory[0].itemName;
-                Inventory[3].itemImage = Inventory[0].itemImage;
+                Inventory[3] = Inventory[0];
                 Inventory[0].itemName = ItemName.Empty;
                 Inventory[0].itemImage = EmptySlot;
+                Debug.Log(Inventory[3].itemName.ToString());
             }
             else if (Inventory[4].itemName == ItemName.Empty)
             {
-                Inventory[4].itemName = Inventory[0].itemName;
-                Inventory[4].itemImage = Inventory[0].itemImage;
+                Inventory[4] = Inventory[0];
                 Inventory[0].itemName = ItemName.Empty;
                 Inventory[0].itemImage = EmptySlot;
+                Debug.Log(Inventory[4].itemName.ToString());
             }
         }
     }
