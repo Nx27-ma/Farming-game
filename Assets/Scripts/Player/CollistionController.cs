@@ -1,8 +1,13 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CollistionController : MonoBehaviour
 {
+    public List<ScriptableObject> Plots = new List<ScriptableObject>();
+    public List<GameObject> PlotsObj = new List<GameObject>();
+    public List<GameObject> FarmField = new List<GameObject>();
+
     public Transform PlayerCheck;
     public Transform ShopCheck;
     public Transform ShedCheck;
@@ -102,6 +107,7 @@ public class CollistionController : MonoBehaviour
             FarmHouseGui.SetActive(false);
         }
     }
+    
     private bool IsMouseInsideObject(Vector2 mousePosition, Transform objectTransform)
     {
         Collider2D objectCollider = objectTransform.GetComponent<Collider2D>();

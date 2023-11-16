@@ -17,19 +17,17 @@ public class buyPlots : MonoBehaviour
 
     void Start()
     {
-        plotsCollection = new GameObject[9, 4];
-        for (int i = 0; i <= 9; i++)
-        {
-            for (int j = 0; j < 4; j++)
-            {
-                int correctie = i + 1;
-                string objectName = "plots" + correctie;
-                plotsCollection[i, j] = GameObject.Find(objectName);
-                Debug.Log(plotsCollection);
-            }
-        }
-
-
+        //plotsCollection = new GameObject[9, 4];
+        //for (int i = 0; i <= 9; i++)
+        //{
+        //    for (int j = 0; j < 4; j++)
+        //    {
+        //        int correctie = i + 1;
+        //        string objectName = "plots" + correctie;
+        //        plotsCollection[i, j] = GameObject.Find(objectName);
+        //        Debug.Log(plotsCollection);
+        //    }
+        //}
     }
     
     

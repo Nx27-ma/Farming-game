@@ -12,6 +12,8 @@ public class InventoyManager : MonoBehaviour
 
     public List<GameObject> ItemObj = new List<GameObject>();
     
+    public List<Sprite> Images = new List<Sprite>();    
+
     public int selectedslot;
 
     public GameObject ItemImg1;
@@ -24,14 +26,13 @@ public class InventoyManager : MonoBehaviour
     public GameObject SlotBackground2;
     public GameObject SlotBackground3;
 
+    public Image HotbarBackground;
+
     public GameObject SlotTxt1; 
     public GameObject SlotTxt2; 
     public GameObject SlotTxt3;
 
     public GameObject ShedGui;
-    
-    public Sprite EmptySlot;
-    public Sprite StartItem;
 
     public Transform Player;
 
@@ -45,15 +46,15 @@ public class InventoyManager : MonoBehaviour
         Inventory.Add(CreateEmptyItem());
         Inventory.Add(CreateBeginItem());
         Inventory.Add(CreateBeginItem());
-        Inventory.Add(CreateEmptyItem());
-        Inventory.Add(CreateEmptyItem());
+        Inventory.Add(CreateGieter());
+        Inventory.Add(CreateOnkruit());
     }
 
     private Item CreateEmptyItem()
     {
         Item newItem = ScriptableObject.CreateInstance<Item>();
         newItem.itemName =  ItemName.Empty;
-        newItem.itemImage = EmptySlot;
+        newItem.itemImage = Images[0];
         newItem.itemType = ItemType.Empty;
 
         return newItem;
@@ -63,8 +64,28 @@ public class InventoyManager : MonoBehaviour
     {
         Item newItem = ScriptableObject.CreateInstance<Item>();
         newItem.itemName =  ItemName.Green;
-        newItem.itemImage = StartItem;
+        newItem.itemImage = Images[1];
         newItem.itemType = ItemType.Crop;
+
+        return newItem;
+    }
+
+    private Item CreateGieter()
+    {
+        Item newItem = ScriptableObject.CreateInstance<Item>();
+        newItem.itemName = ItemName.Gieter;
+        newItem.itemImage = Images[2];
+        newItem.itemType = ItemType.Tool;
+
+        return newItem;
+    }
+
+    private Item CreateOnkruit()
+    {
+        Item newItem = ScriptableObject.CreateInstance<Item>();
+        newItem.itemName = ItemName.Onkruidverwijderaar;
+        newItem.itemImage = Images[3];
+        newItem.itemType = ItemType.Tool;
 
         return newItem;
     }
@@ -91,26 +112,45 @@ public class InventoyManager : MonoBehaviour
         }
     }
 
-    public void ShetSwap()
+    public void HotbarShetSwap()
     {
-        Debug.Log("test");
-        Debug.Log(ShedGui.activeSelf);
         if (ShedGui.activeSelf == true)
         {
-            Debug.Log("active");
-            if (Inventory[3].itemName == ItemName.Empty)
+            if (Inventory[0].itemName == ItemName.Gieter)
             {
-                Inventory[3] = Inventory[0];
+                Inventory[3].itemName = Inventory[0].itemName;
+                Inventory[3].itemImage = Inventory[0].itemImage;
                 Inventory[0].itemName = ItemName.Empty;
-                Inventory[0].itemImage = EmptySlot;
-                Debug.Log(Inventory[3].itemName.ToString());
+                Inventory[0].itemImage = Images[0];
             }
-            else if (Inventory[4].itemName == ItemName.Empty)
+            else if (Inventory[0].itemName == ItemName.Onkruidverwijderaar)
             {
-                Inventory[4] = Inventory[0];
+                Inventory[4].itemName = Inventory[0].itemName;
+                Inventory[4].itemImage = Inventory[0].itemImage;
                 Inventory[0].itemName = ItemName.Empty;
-                Inventory[0].itemImage = EmptySlot;
-                Debug.Log(Inventory[4].itemName.ToString());
+                Inventory[0].itemImage = Images[0];
+            }
+        }
+    }
+
+    public void ShedHotbarSwap(Button button)
+    {
+        if (Inventory[0].itemName == ItemName.Empty)
+        {
+            if (button.name == "Slot4")
+            {
+                Inventory[0].itemName = Inventory[3].itemName;
+                Inventory[0].itemImage = Inventory[3].itemImage;
+                Inventory[3].itemName = ItemName.Empty;
+                Inventory[3].itemImage = Images[0];
+            }
+
+            if (button.name == "Slot5")
+            {
+                Inventory[0].itemName = Inventory[4].itemName;
+                Inventory[0].itemImage = Inventory[4].itemImage;
+                Inventory[4].itemName = ItemName.Empty;
+                Inventory[4].itemImage = Images[0];
             }
         }
     }
@@ -149,6 +189,12 @@ public class InventoyManager : MonoBehaviour
 
     void Update()
     {
+        ItemImg1.GetComponent<Image>().sprite = Inventory[0].itemImage;
+        ItemImg2.GetComponent<Image>().sprite = Inventory[1].itemImage;
+        ItemImg3.GetComponent<Image>().sprite = Inventory[2].itemImage;
+        ItemImg4.GetComponent<Image>().sprite = Inventory[3].itemImage;
+        ItemImg5.GetComponent<Image>().sprite = Inventory[4].itemImage;
+
         if (Input.anyKeyDown)
         {
             SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
@@ -173,12 +219,6 @@ public class InventoyManager : MonoBehaviour
             }
         }
 
-        ItemImg1.GetComponent<Image>().sprite = Inventory[0].itemImage;
-        ItemImg2.GetComponent<Image>().sprite = Inventory[1].itemImage;
-        ItemImg3.GetComponent<Image>().sprite = Inventory[2].itemImage;
-
-
-
         if (Input.GetKeyDown(KeyCode.Q))
         {
             for (int i = 0; i < ItemObj.Count; i++)
@@ -189,7 +229,7 @@ public class InventoyManager : MonoBehaviour
                     Item.transform.position = Player.position;
 
                     Inventory[selectedslot].itemName = ItemName.Empty;
-                    Inventory[selectedslot].itemImage = EmptySlot;
+                    Inventory[selectedslot].itemImage = Images[0];
                 }
             }
         }
