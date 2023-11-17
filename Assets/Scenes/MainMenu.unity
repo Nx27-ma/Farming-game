@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 1008313216}
   - component: {fileID: 1008313215}
   m_Layer: 5
-  m_Name: Settings
+  m_Name: Cedits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Settings
+  m_text: 'Crdits
 
 '
   m_isRightToLeft: 0

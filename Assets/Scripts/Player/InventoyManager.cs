@@ -167,14 +167,14 @@ public class InventoyManager : MonoBehaviour
     {
         if (ShopGui.activeSelf == true)
         {
-            if (Inventory[1].itemName == ItemName.Gieter)
+            if (Inventory[1].itemName == ItemName.Empty)
             {
                 Inventory[1].itemName = Inventory[5].itemName;
                 Inventory[1].itemImage = Inventory[5].itemImage;
                 Inventory[5].itemName = ItemName.Empty;
                 Inventory[5].itemImage = Images[0];
             }
-            else if (Inventory[2].itemName == ItemName.Onkruidverwijderaar)
+            else if (Inventory[2].itemName == ItemName.Empty)
             {
                 Inventory[2].itemName = Inventory[5].itemName;
                 Inventory[2].itemImage = Inventory[5].itemImage;
@@ -186,22 +186,25 @@ public class InventoyManager : MonoBehaviour
 
     public void HotbarShopSwap(Button button)
     {
-        if (Inventory[5].itemName == ItemName.Empty)
+        if (ShopGui.activeSelf == true)
         {
-            if (button.name == "Slot2")
+            if (Inventory[5].itemName == ItemName.Empty)
             {
-                Inventory[5].itemName = Inventory[1].itemName;
-                Inventory[5].itemImage = Inventory[1].itemImage;
-                Inventory[1].itemName = ItemName.Empty;
-                Inventory[1].itemImage = Images[0];
-            }
+                if (button.name == "Slot2")
+                {
+                    Inventory[5].itemName = Inventory[1].itemName;
+                    Inventory[5].itemImage = Inventory[1].itemImage;
+                    Inventory[1].itemName = ItemName.Empty;
+                    Inventory[1].itemImage = Images[0];
+                }
 
-            if (button.name == "Slot3")
-            {
-                Inventory[5].itemName = Inventory[2].itemName;
-                Inventory[5].itemImage = Inventory[2].itemImage;
-                Inventory[2].itemName = ItemName.Empty;
-                Inventory[2].itemImage = Images[0];
+                if (button.name == "Slot3")
+                {
+                    Inventory[5].itemName = Inventory[2].itemName;
+                    Inventory[5].itemImage = Inventory[2].itemImage;
+                    Inventory[2].itemName = ItemName.Empty;
+                    Inventory[2].itemImage = Images[0];
+                }
             }
         }
     }

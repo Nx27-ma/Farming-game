@@ -14,6 +14,11 @@ public class GameSceneManager : MonoBehaviour
         SceneManager.LoadScene("Settings");
     }
 
+    public void MainMenuCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void MainMenuQuit()
     {
         Application.Quit();
@@ -25,4 +30,11 @@ public class GameSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    //Credits
+    public void CreditsReturn()
+    {
+        SceneManager.LoadScene("MeinMenu");
+    }
+
 }
