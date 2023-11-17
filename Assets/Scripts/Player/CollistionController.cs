@@ -1,32 +1,28 @@
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class CollistionController : MonoBehaviour
 {
     public List<GameObject> PlotObjs = new List<GameObject>();
-    public List<Plots> PlotScriptObjs = new List<Plots>();
-    public List<GameObject> FarmFieldObjs = new List<GameObject>();
+    public List<Plots> ScriptPlotObjs = new List<Plots>();
+    public List<GameObject> PlotGuis = new List<GameObject>();
+    public List<GameObject> PlotImages = new List<GameObject>();
+    public List<GameObject> FarmFieldGuis = new List<GameObject>();
+    public List<GameObject> FarmFieldImages = new List<GameObject>();
 
-    private int[,] my2DArray;
-
-    public GameObject PlotGui;
-    public TextMeshProUGUI PlotText;
-
-    public GameObject FarmFieldGui;
-    public TextMeshProUGUI FarmFieldText;
+    public int[,] FarmLandIndex;
 
     public Transform PlayerCheck;
     public Transform ShopCheck;
     public Transform ShedCheck;
     public Transform FarmHouseCheck;
 
-    public Image ShopGuiCheck;
-    public Image ShedGuiCheck;
-    public Image FarmHouseGuiCheck;
-    public Image HotbarGuiCheck;
+    public UnityEngine.UI.Image ShopGuiCheck;
+    public UnityEngine.UI.Image ShedGuiCheck;
+    public UnityEngine.UI.Image FarmHouseGuiCheck;
+    public UnityEngine.UI.Image HotbarGuiCheck;
+
 
     public GameObject ShopFloorObject;
     public GameObject ShedFloorObject;
@@ -39,6 +35,21 @@ public class CollistionController : MonoBehaviour
     public GameObject ShedGui;
     public GameObject FarmHouseGui;
 
+    private void Start()
+    {
+        FarmLandIndex = new int[9, 4];
+
+        int Count = 0;
+        for (int i = 0; i < 9; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                FarmLandIndex[i, j] = Count;
+                Count++;
+            }
+        }
+    }
+
     private void Update()
     {
         if (IsObjectInsideObject(PlayerCheck, ShopFloorObject))
@@ -47,9 +58,6 @@ public class CollistionController : MonoBehaviour
             {
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
-
-                Debug.Log(IsMouseOverImage(ShopGuiCheck));
-                Debug.Log(IsMouseOverImage(HotbarGuiCheck));
 
                 if (IsMouseInsideObject(mousePosition2D, ShopCheck) || IsMouseOverImage(ShopGuiCheck) || IsMouseOverImage(HotbarGuiCheck))
                 {
@@ -117,45 +125,45 @@ public class CollistionController : MonoBehaviour
             FarmHouseGui.SetActive(false);
         }
 
-        if (Input.GetMouseButtonDown(0))
+        for (int i = 0; i < PlotObjs.Count; i++)
         {
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
-
-            for (int i = 0; i < PlotObjs.Count; i++)
+            if (IsObjectInsideObject(PlayerCheck, PlotObjs[i]))
             {
-                Debug.Log(IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform));
-                if (IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform))
+                
+                var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                var mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
+
+                if (ScriptPlotObjs[i].Gekocht)
                 {
-                    if (PlotScriptObjs[0].Gekocht == false)
+                    for (int j = 0; j < 4; j++)
                     {
-                        int value = 0;
-                        for (int g = 0; g < 8; g++)
+                        if (IsObjectInsideObject(PlayerCheck, PlotObjs[i].transform.GetChild(j).gameObject))
                         {
-                            for (int j = 0; j < 3; j++)
+                            if (Input.GetMouseButtonDown(0))
                             {
-                                my2DArray[i, j] = value;
-                                value++;
+                                if (IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform.GetChild(j)) || IsMouseInsideObject(mousePosition2D, FarmFieldImages[FarmLandIndex[i, j]].transform)) FarmFieldGuis[FarmLandIndex[i, j]].SetActive(true);
+                                else FarmFieldGuis[FarmLandIndex[i, j]].SetActive(false);
                             }
                         }
-                        for (int n = 0; n < 4; n++)
-                        {
-                            if (IsMouseInsideObject(mousePosition2D, FarmFieldObjs[my2DArray[i, n]].transform))
-                            {
-                                FarmFieldText.text = FarmFieldObjs[my2DArray[i, n]].name;
-                                FarmFieldGui.SetActive(true);
-                            }
-                        }
+                        else FarmFieldGuis[FarmLandIndex[i, j]].SetActive(false);
                     }
-                    else
-                    {
-                        PlotText.text = PlotObjs[i].name;
-                        PlotGui.SetActive(true);
-                    }
-                    PlotGui.SetActive(false);
-                    FarmFieldGui.SetActive(false);
                 }
+                else
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        Debug.Log(IsMouseInsideObject(mousePosition2D, PlotImages[i].transform));
+                        if (IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform) || IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform.GetChild(0)) ||
+                        IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform.GetChild(1)) || IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform.GetChild(2)) ||
+                        IsMouseInsideObject(mousePosition2D, PlotObjs[i].transform.GetChild(3)) || IsMouseInsideObject(mousePosition2D, PlotImages[i].transform))
+                        {
+                            PlotGuis[i].SetActive(true);
+                        }
+                        else PlotGuis[i].SetActive(false);
+                    }
+                }   
             }
+            else PlotGuis[i].SetActive(false);
         }
     }
     
@@ -174,7 +182,7 @@ public class CollistionController : MonoBehaviour
         return otherCollider.bounds.Contains(objectCollider.bounds.min) && otherCollider.bounds.Contains(objectCollider.bounds.max);
     }
 
-    bool IsMouseOverImage(Image uiImage)
+    bool IsMouseOverImage(UnityEngine.UI.Image uiImage)
     {
         if (uiImage == null)
         {

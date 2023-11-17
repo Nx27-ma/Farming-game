@@ -10,7 +10,7 @@ public class buyPlots : MonoBehaviour
     private GameObject[,] plotsCollection;
     public float Geld { get => geld; set => geld = value; }
     private int plotAmount;
-    private float plotCost = 1;
+    private float plotCost = 1; //de cost van plots zitten nu in de scriptableObjects in assets/items/scriptableObjects/Plots
     private int totalPlots = 9;
 
     

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
@@ -21,6 +22,7 @@ public class InventoyManager : MonoBehaviour
     public GameObject ItemImg3;
     public GameObject ItemImg4;
     public GameObject ItemImg5;
+    public GameObject ItemImg6;
 
     public GameObject SlotBackground1;
     public GameObject SlotBackground2;
@@ -28,11 +30,13 @@ public class InventoyManager : MonoBehaviour
 
     public Image HotbarBackground;
 
-    public GameObject SlotTxt1; 
-    public GameObject SlotTxt2; 
-    public GameObject SlotTxt3;
+    public TextMeshProUGUI SlotTxt1; 
+    public TextMeshProUGUI SlotTxt2; 
+    public TextMeshProUGUI SlotTxt3;
+    public TextMeshProUGUI SlotTxt4;
 
     public GameObject ShedGui;
+    public GameObject ShopGui;
 
     public Transform Player;
 
@@ -48,6 +52,7 @@ public class InventoyManager : MonoBehaviour
         Inventory.Add(CreateBeginItem());
         Inventory.Add(CreateGieter());
         Inventory.Add(CreateOnkruit());
+        Inventory.Add(CreateEmptyItem());
     }
 
     private Item CreateEmptyItem()
@@ -92,21 +97,24 @@ public class InventoyManager : MonoBehaviour
 
     public void SetSelected(Button button)
     {
-        SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
-        SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
-        SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
         switch (button.name)
         {
             case "Slot1":
                 selectedslot = 0;
+                SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 SlotBackground1.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
                 break;
             case "Slot2":
                 selectedslot = 1;
+                SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 SlotBackground2.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
                 break;
             case "Slot3":
                 selectedslot = 2;
+                SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 SlotBackground3.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
                 break;
         }
@@ -155,6 +163,49 @@ public class InventoyManager : MonoBehaviour
         }
     }
 
+    public void ShopHotbarSwap()
+    {
+        if (ShopGui.activeSelf == true)
+        {
+            if (Inventory[1].itemName == ItemName.Gieter)
+            {
+                Inventory[1].itemName = Inventory[5].itemName;
+                Inventory[1].itemImage = Inventory[5].itemImage;
+                Inventory[5].itemName = ItemName.Empty;
+                Inventory[5].itemImage = Images[0];
+            }
+            else if (Inventory[2].itemName == ItemName.Onkruidverwijderaar)
+            {
+                Inventory[2].itemName = Inventory[5].itemName;
+                Inventory[2].itemImage = Inventory[5].itemImage;
+                Inventory[5].itemName = ItemName.Empty;
+                Inventory[5].itemImage = Images[0];
+            }
+        }
+    }
+
+    public void HotbarShopSwap(Button button)
+    {
+        if (Inventory[5].itemName == ItemName.Empty)
+        {
+            if (button.name == "Slot2")
+            {
+                Inventory[5].itemName = Inventory[1].itemName;
+                Inventory[5].itemImage = Inventory[1].itemImage;
+                Inventory[1].itemName = ItemName.Empty;
+                Inventory[1].itemImage = Images[0];
+            }
+
+            if (button.name == "Slot3")
+            {
+                Inventory[5].itemName = Inventory[2].itemName;
+                Inventory[5].itemImage = Inventory[2].itemImage;
+                Inventory[2].itemName = ItemName.Empty;
+                Inventory[2].itemImage = Images[0];
+            }
+        }
+    }
+
     public void Add(Item item, GameObject itemObject)
     {
         if (item.itemType == ItemType.Tool)
@@ -194,27 +245,36 @@ public class InventoyManager : MonoBehaviour
         ItemImg3.GetComponent<Image>().sprite = Inventory[2].itemImage;
         ItemImg4.GetComponent<Image>().sprite = Inventory[3].itemImage;
         ItemImg5.GetComponent<Image>().sprite = Inventory[4].itemImage;
+        ItemImg6.GetComponent<Image>().sprite = Inventory[5].itemImage;
+
+        SlotTxt1.text = Inventory[0].itemName.ToString();
+        SlotTxt2.text = Inventory[1].itemName.ToString();
+        SlotTxt3.text = Inventory[2].itemName.ToString();
+        SlotTxt4.text = Inventory[5].itemName.ToString();
 
         if (Input.anyKeyDown)
         {
-            SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
-            SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
-            SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 selectedslot = 0;
+                SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 SlotBackground1.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 selectedslot = 1;
+                SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground3.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 SlotBackground2.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 selectedslot = 2;
+                SlotBackground1.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                SlotBackground2.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 SlotBackground3.GetComponent<Image>().color = new Color32(255, 0, 0, 20);
             }
         }
