@@ -198,7 +198,6 @@ public class CollistionController : MonoBehaviour
         {
             return true;
         }
-
         return false;
     }
 }
