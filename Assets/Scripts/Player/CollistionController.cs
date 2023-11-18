@@ -179,7 +179,20 @@ public class CollistionController : MonoBehaviour
         Collider2D objectCollider = objectTransform.GetComponent<Collider2D>();
         Collider2D otherCollider = otherGameObject.GetComponent<Collider2D>();
 
-        return otherCollider.bounds.Contains(objectCollider.bounds.min) && otherCollider.bounds.Contains(objectCollider.bounds.max);
+        if (objectCollider != null && otherCollider != null)
+        {
+            var objectBounds = new Bounds(objectCollider.bounds.center, objectCollider.bounds.size);
+            var transformedObjectBounds = objectBounds;
+            transformedObjectBounds.center = objectTransform.TransformPoint(objectBounds.center);
+            transformedObjectBounds.size = objectTransform.TransformVector(objectBounds.size);
+
+            return otherCollider.bounds.Contains(objectCollider.bounds.min) && otherCollider.bounds.Contains(objectCollider.bounds.max);
+        }
+        else
+        {
+            // Handle the case where either collider is null
+            return false;
+        }
     }
 
     bool IsMouseOverImage(UnityEngine.UI.Image uiImage)
@@ -191,13 +204,19 @@ public class CollistionController : MonoBehaviour
 
         RectTransform rectTransform = uiImage.rectTransform;
 
-        Vector2 localMousePosition;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, Input.mousePosition, null, out localMousePosition);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, Input.mousePosition, Camera.main, out Vector2 localMousePosition);
 
-        if (rectTransform.rect.Contains(localMousePosition))
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
         {
-            return true;
+            if (hit.transform == rectTransform)
+            {
+                return true;
+            }
         }
+
         return false;
     }
 }
